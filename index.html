@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      body{
+            
+            background-image: url(https://images.pexels.com/photos/16689312/pexels-photo-16689312/free-photo-of-chatgpt-is-always-here-to-help-whether-on-your-phone-or-laptop.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family:Arial, Helvetica, sans-serif;
+      }
+            .header{
+                  width: 1280px;
+                  height: 50px;
+                  border: 1px dashed #EC3573;
+                  margin: 18px auto;
+                  position: relative;
+                  background-color:#EC3573;
+            }
+            
+           
+            .header>ul>li{
+                transition: 0.8s;
+            }
+             .header > ul > li:hover > a{
+            
+                  background-color:#DA1457;
+                 
+                 
+             }  
+             
+            .submenu a:hover{
+                  background-color:#DA1457;
+                  color:#fcf9f8;
+                  
+             }
+            
+             
+             .header > ul > li{
+                  list-style:none;
+                  text-align: center;
+                  margin-top:-17PX;
+                  display: inline-block;
+                  float: left;
+                  
+          
+             }
+             
+             .header > ul > li > a{
+                  display: inline-block;
+                  text-decoration: none;
+                  line-height: 50px;
+                  width: 130px;
+                  font-size: small;
+                  color: #fcf9f8;
+                 
+                 
+                  
+                 
+             }
+             .header > ul{
+                display: block;
+                margin-left: -41px;
+              
+             }
+            .active{
+                background-color:#EC3573;
+                  
+
+            }
+            .active:hover{
+                background-color:#DA1457;
+            }
+            .submenu{                                          
+                  
+                  position: absolute;
+                  width: 260px;
+                  height:300px;
+                  line-height: 60px;
+                  list-style: none;
+                  background-color: #fcf9f8;
+                  color:#555555; 
+                  padding-left: 0px;
+                  font-size: small;
+                  display: none;
+                  
+                 
+                  
+            }
+            .menu >li>a{
+                transition: 0.7s;
+
+                
+            }
+            .submenu > li > a{
+                  display: block;
+                  width: 250px;
+                  height:60px;
+                  text-decoration:none;
+                  text-align: left;
+                  padding-left: 10px;
+                  color:#555555;
+            }
+            .submenu .fa-solid{
+                 padding-left: 130px;
+            }
+            .submenu .fa-chevron-left{
+                  padding-left: 140px;
+            }
+            .menu > li > .submenu > a:hover{
+                  background-color:#DA1457;
+                  color: #fcf9f8;
+                  display: block;
+            }
+            .menu > li > a{
+                  padding: 1px;
+
+            }
+            .submenu1{
+                  height:240px;
+                  width: 260px;
+                  background-color: #fcf9f8;
+                  position: absolute;
+                  top:60px;
+                  left:260px;
+                  padding-left: 0px;
+                  list-style: none;
+                 
+                 }
+            .submenu1 > li > a{ 
+                  text-align: center;
+            }     
+            .submenu2{
+                  position: absolute;
+                  margin-left: -260px;
+                  top:180px;
+                 }
+            .submenu2 > li > a{
+                  
+                  text-align: center;
+            }
+             
+            .menu li:hover > .submenu{
+                  display: block;
+                              
+                        } 
+                        
+            .megamenu_table{
+                              width: 1280px;
+                              height: 250px;
+                              position: absolute;
+                              margin-left: -395px;
+                              background-color: #fcf9f8;
+                              color: #666;
+                              display: none;
+                             
+
+                        }
+                    
+                            .p10{
+                                    list-style:none;
+                                    position: absolute;
+                                    top:0px;
+                                    font-size:small;
+                                    text-align: left;  
+                                 }
+                        .p10 > li{
+                                  width: 200px;
+                                  padding: 5px;       
+                        }           
+                        .p10 > li > a{
+                                   text-decoration: none;
+                                   color: #555;
+                                   
+                        }
+                        .header > .megamenu > li{
+                              padding-left: 20px;
+                        }
+                        
+                        .menu li:hover > .megamenu > .megamenu_table{
+                              display:block;
+
+                             } 
+                         
+                        .megamenu_table li:hover > a{
+                              color: #DA1457
+                        }
+                        .Tab{
+                              width: 1240px;
+                              height: 40px;
+                              border: 1px dashed red;
+                              position: absolute;
+                              top:50px;
+                              left:-590px;
+                              
+                        }
+                        .Tap > li > a{
+                              display: inline-block;
+                        }
+                        .megaGrid{
+                              width: 1270px;
+                              height: 40px;
+                              position: absolute;
+                              top: 51px;
+                              left:0px;
+                              background-color: #fcf9f8;
+                              display: none;
+                              color: #555555;    
+                        }
+                        .megaGrid > li{
+                              display: inline-block;
+                              margin: 10px;
+                              padding-left: 20px;
+                              font-size: small;
+                              text-decoration: none;
+                              float: left;
+                        }
+                        .Grid .megaGrid{
+                              padding-left: 10px;
+                             
+                              }    
+                         .megaGrid > li > a{
+                              text-decoration: none;
+                              margin-left: -20px ;
+                              color: #555;
+
+                         }
+                         .menu li:hover > .Grid > .megaGrid{
+                             display: block;
+                            
+                              }
+                              .megaGrid li:hover > a{
+                                    color:#DA1457
+                              }
+                          .megaGrid > li > i{
+                              padding-left: 10px;
+                          }   
+                          .imag{
+                              width: 570px;
+                              height: 400px;
+                              background-color: #fcf9f8;
+                              position: absolute;
+                              display: none;
+                              
+                              left:450px;
+
+                          }    
+                          .imag > ul{
+                        
+                              width: 570px;
+                              height: 150px;
+                              padding-left: 0px;
+                        }
+                          .imag > ul > li{
+                              list-style: none;
+                              float: left;
+                              height: 150px;
+                              width: 140px;
+                              color: #555555;
+                             
+                              
+                          }
+                          .block1{
+                            display: block;
+                             width: 570px;
+                             height: 130px;
+                          }
+                          .block1 > ul > li{
+                            
+                              list-style: none;
+                              text-decoration: none;
+                              text-align: left;
+                              font-size: small;
+                              padding-left:0px;
+                              width: 500px;
+                              color: #555;
+                              }
+                              .block1 > ul > li > a {
+                              text-decoration: none;
+                              color:#555
+
+                          }
+                          .block2{
+                              text-align: left;
+                              padding-top: 20px;
+                              font-size: small;
+                              padding-left:0px;
+                              width: 500px;
+                          }   
+                          .block2 > ul > li > a {
+                              text-decoration: none;
+                              color: #555;
+                              
+
+                          }
+                          .block2 > ul > li{
+                              list-style:none;
+                              padding-top: -10px;
+                              height: 20px;
+                            
+                          }
+
+                          .menu > li:hover > .imag{
+                             
+                              display: block;
+                              color:#DA1457
+                              
+                          }
+                          .icons{
+                              position: absolute;
+                              display: inline-block;
+                              top:-2px;
+                              padding-left: -60px;
+                              top:-15px;
+                         }
+                         .icons  > ul > li{
+                              display: inline-block;
+                              width:20px;
+                             
+                         }
+                         .icons > ul > li > a{
+                              display: block;
+                              height: 50px;
+                              line-height: 50px;
+                              text-align: center;
+                         }
+                         .icons > ul > li:hover{
+                              background-color:#395797;
+                              background-color: red;   
+                              color:#edeff2;
+                         }
+                         .form{
+                              position: absolute;
+                              width: 550px;
+                              height:400px;
+                              left:600px;
+                              color: #555555;
+                              display: none;
+
+                         }
+                         .form > ul > li{ 
+                              display: block;
+                              text-align: left;
+                              width: 200px;
+                              font-size: small;
+                              
+                         }
+                         .form2{
+                             height: 255px;
+                             width: 250px;
+                             padding: 7px 0px 5px 6px;
+                             position: absolute;
+                             top:110px;
+                             left:22px;
+                             background-color: #f7f7f7;
+                         }   
+                         input{
+                              display: block;
+                              height: 30px;
+                              width: 220px;
+                              margin: 5px;
+                              border: 0.2% solid #555555;
+                         }
+                         input[type="message"]{
+                              height: 70px;
+                             
+                         }
+                         input[type="submit"]{
+                              background-color: #DA1457;
+                              color:#edeff2;
+                              border: none;
+                         }
+                         input[type="reset"]{
+                              background-color: #DA1457;
+                              color: #eeeff1;
+                              border: none;
+                         }
+                         .vedio{
+                              width: 250px !important;
+                              position: absolute;
+                              left:270px !important;
+                              list-style: none;
+                              display: block;
+                              font-size: small;
+                              
+                              
+                         }
+                         .menu > li:hover > .form{
+                              display: block;
+                              background-color: #f7f7f7;
+                         }
+                         .manish{
+                              margin-top:-10px;
+                              width:50px;
+                              height:200px;
+                         }
+</style>    
+</head>
+<html>                  
+<body>
+     
+      <nav class="header">
+            <ul class="menu">
+                  <li>
+                        <a href="#"><img width="16" src="/img/ufo.png"alt="ufo">Company logo</a></li>
+                      <li> <a href="#" class="active">Active</a>
+                  </li><li>
+                        <a href="#">Drop down <i class="fa-solid fa-angle-down fa-sm"></i></a>
+                        <ul class="submenu">
+                              <li>
+                             <a href="#">Item one </a><li>
+                             <a href="#"> Item right side<i class="fa-solid fa-chevron-right"></i></a>
+                             <ul class="submenu1 submenu"></li>
+                              
+                              <li>
+                                    <a> <i class="fa-solid fa-audio-description"></i></i>  
+                                          level 2</a>
+                                   
+                              </li>
+                                    <li>
+                                        <a> level 2</a>     
+                                    </li>
+                                    <li>
+                                          <a> level 2</a>
+                                         
+                                    </li> 
+                                    <li>
+                                          <a>level 2</a>
+                                         
+                                    </li>
+                                   
+                             
+                        </ul> 
+                          <li>  <a href="#"> Item 2</a></li>
+
+                         <li> <a href="#">Item left side <i class="fa-solid fa-chevron-left"></i></a>
+                             <ul class="submenu2 submenu">
+                              
+                                    <li>
+                                          <a>level 2</a>
+                                    
+                                    </li>
+                                    <li>
+                                          <a> level 2</a>
+                                         
+                                    </li>
+                                    <li>
+                                          <a> level 2</a>
+                                         
+                                    </li> <li>
+                                          <a> level 2</a>
+                                         
+                                    </li>
+                                   
+                             
+                              </ul>
+                              </li>
+                            <li> <a href="#">Item 4 </a></li>
+                            
+                             </li> 
+                        </ul>
+                  </li><li>
+                        <a href="#">Mega Menu  <i class="fa-solid fa-angle-down fa-sm"></i></a>
+                        <div class="megamenu">
+                              <table border="0px" class="megamenu_table" cellspacing="0">
+                                    <tr>
+                                          <td style="width: 213px;">
+                                                <ul class="p10" >  <h3> Item List</h3>
+                  
+                                                      <li>
+                                                            <a href="#">NetTuts</a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">VectorTuts</a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">PsdTuts</a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">Photo Tuts</a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">Active Tuts</a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">Creattca</a>
+                                                      </li>
+                                                </ul>
+                                          </td>
+                                          <td style="width: 213px;">
+                                                <ul class="p10">  <h3> List + Discription</h3>
+            
+                                                      <li>
+                                                            <a href="#">ThemeForest</a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">GraphicRiver</a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">activeDen</a>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">VedioHive</a>
+                                                      </li>
+                                                     
+                                                </ul></td>
+                                          <td style="width: 213px;">
+                                                <ul class="p10">  <h3>Images + Discription</h3>
+                  
+                                                      <li>
+                                                            <a href="#"><i class="fa-solid fa-palette"></i> ThemeForest</a>
+                                                                  <div style="padding-left: 18px;" text-style="dashed">Discription</div>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#"><i class="fa-solid fa-paintbrush"></i>
+                                                             GhrapicRiver</a>
+                                                             <div style="padding-left: 18px;" text-style="dashed">Discription</div>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#"><i class="fa-solid fa-swatchbook"></i>
+                                                                  ActiveDen</a>
+                                                                  <div style="padding-left: 18px;" text-style="dashed">Discription</div>
+                                                      </li>
+                                                </ul></td>
+                                          <td style="width: 213px;">
+                                                <ul class="p10">  <h3> List with Icon</h3>
+                  
+                                                      <li>
+                                                            <a href="#"><i class="fa-solid fa-pen-nib"></i>
+                                                                  Design</a>
+                                                                  <div style="padding-left: 17px;" text-style="dashed">Discription</div>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#"><i class="fa-brands fa-font-awesome"></i>
+                                                                  Logo</a>
+                                                                  <div style="padding-left: 17px;" text-style="dashed">Discription</div>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#"><i class="fa-solid fa-bolt-lightning"></i>
+                                                                  Flash</a><div style="padding-left: 17px;" text-style="dashed">Discription</div>
+                                                      </li>
+                                                      <li>
+                                                            <a href="#">
+                                                                  <i class="fa-solid fa-bolt"></i>Illustration</a>
+                                                                  <div style="padding-left: 17px;" text-style="dashed">Discription</div>
+                                                      </li>
+                                                      
+                                                </ul></td></td>
+                                           <td style="width: 213px;">
+                                                <ul class="p10">  <h3> Paragraph</h3>
+                  
+                                                      <li>
+                                                            <a href="#">Curabitur ut sodales odio. Cras quis mi ac nisl euismod tempor sed a arcu. Vestibulum faucibus fermentum purus ac tempor. Maecenas ut leo quis ipsum vulputate varius. Pellentesque eget.</a>
+                                                      </li>
+                                                      </td>
+                                          <td style="width: 213px;">
+                                                <ul class="p10">  <h3> Image</h3>
+                  
+                                                      <li>
+                                                           <a href="#"> <img style="width:160px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT48uL8g0cns_h0QZJdG_iEzGtS2cs_sKaduQ&usqp=CAU" alt="" class="manish"></a>
+                                                      <li>
+                                                            
+                                                      </td>
+                                    </tr>
+                              </table>
+
+                        </div>
+                  </li><li><a href="">Tap bar  <i class="fa-solid fa-angle-down fa-sm"></i></a>
+                  <div class="Grid">
+                        <ul class="megaGrid ">
+                              <li><a href="#"><i class="fa-solid fa-tag"></i>Tap bar <i class="fa-solid fa-chevron-right"></i></a></li>
+                              <li><a href="#">Mention Graphic </a><i class="fa-solid fa-chevron-right"></i></li>
+                              <li><a href="#">Game Devolopment</a><i class="fa-solid fa-chevron-right"></i></li>
+                              <li><a href="#">Bussiness </a><i class="fa-solid fa-chevron-right"></i></li>
+                              <li><a href="#">Illustration </a><i class="fa-solid fa-chevron-right"></i></li>
+                              <li><a href="#">Web design </a><i class="fa-solid fa-chevron-right"></i> </li>
+                              <li><a href="#">Mac Computer skills</a><i class="fa-solid fa-chevron-right"></i></li>    
+                        </ul></div></li>
+                        <li>
+                        <a href="#">Images  <i class="fa-solid fa-angle-down fa-sma"></i></a>
+                        <div class="imag">
+                              <ul>
+                                    <li>  
+                                          <h3> Product #1</h3>
+                                          <a href=""><img width="100px" height="100px" src="https://images.pexels.com/photos/1909277/pexels-photo-1909277.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image"></a></li>
+                                    <li>  <h3>Product #2</h3>
+                                          <a href=""><img width="100px" height="100px" src="https://images.pexels.com/photos/3801091/pexels-photo-3801091.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image"></a></li>
+                                    <li>  <h3>Product #3</h3>
+                                          <a href=""><img width="100px" height="100px"  src="https://images.pexels.com/photos/3585088/pexels-photo-3585088.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image"></a></li>
+                                    <li>  <h3> Product #4</h3>
+                                          <a href=""><img width="100px" height="100px"  src="https://images.pexels.com/photos/3965557/pexels-photo-3965557.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="image"></a></li>
+                                        
+                                    </ul>
+                                    <div class="block1"> <ul>
+                                          <li><h2>Here is some content with side images</h2>
+                                                <a>Maecenas eget eros lorem, nec pellentesque lacus quis felis consequat scelerisque. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. Sed in sem mauris. Aenean a commodo mi. Praesent augue lacus.
+                                                </a>
+                                                      <a href="#"> Read more...</a>
+                                          </li>
+
+                              </div>
+                              <div class="block2">
+                                    <ul>
+                                          <li>
+                                                <a>
+                                                      Maecenas eget eros lorem, nec pellentesque lacus quis felis consequat scelerisque. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. Sed in sem mauris. Aenean a commodo mi. Praesent augue lacus.
+
+                                                      <a href="#">Read more...</a>
+                                                </a>
+                                          </li>
+                                    </ul>
+                              </div>
+                              
+                        </div>
+                        
+                  <li>  
+                        <a href="#">Contact  <i class="fa-solid fa-angle-down fa-sm"></i></a>
+                       
+                        <div class="form">
+                           <ul>
+                              <li><h2>Contect Us</h2>
+                           <a>Please fill in the following form to contact us</a>
+                         </li></ul>
+                         <div class="form2">
+                         <form>
+                              <input type="text" value="" placeholder="Name">
+                              <input type="text" value="" placeholder="E-mail">
+                              <input type="message" vaue="massage" placeholder="massage">
+                         </form>
+                        <div>
+                              <input style="width: 70px;"type="submit" name="" id="">
+                              <input style="width: 70px;" type="reset">
+                              
+
+                            </div>
+                           </div>  
+                           <div class="vedio form" style="position: absolute; top:0px;"> 
+                              <ul>
+                                    <li><h2>Vedio</h2>
+                                          <a>Maecenas eget eros lorem, nec pellentesque lacus quis felis consequat scelerisque. Aenean dui orci, rhoncus sit amet tristique eu, tristique sed odio. Praesent ut interdum elit. Sed in sem mauris. Aenean a commodo mi. Praesent augue lacus.</a>
+                                    </li>
+                              </ul>
+                        </div>
+                        </div>
+                         
+                  </li> 
+           
+            
+            </ul>
+            <div class="icons">
+            <ul>
+                  <li><a href="#"><i class="fa-brands fa-square-facebook" style="color: #f4f5f5;"></i></a></i></li>
+                  <li><a href="#"><i class="fa-brands fa-square-twitter" style="color: #f4f5f5;"></i></a></li>
+                  <li><a href="#"><i class="fa-brands fa-google-plus-g" style="color: #f4f5f5;"></i></a></li>
+                  <li><a href="#"> <i class="fa-brands fa-pinterest" style="color: #eeeff1;"></i></a></li>
+            </ul> </div>
+            <div>
+                  <ul>
+                        <li border="1" style="list-style: none;"><a href="#"  style="padding-left: 320px;"><i class="fa-solid fa-magnifying-glass" style="color: #edeff2;"></i></a></li>
+                  </ul>
+            </div>
+            
+      </nav>
+      
+</body>
+</html>
